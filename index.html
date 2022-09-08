@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>Movies App</title>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar bg-danger">
+        <div class="container py-2">
+            <div class='row'>
+                <div class='col-2 >'>
+                    <a href="index.html"><img src="images/logo2.png" alt="" class='w-100' /></a>
+                </div><!-- col -->
+                <div class='col-10 mt-2'>
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1"><i
+                                class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" class="form-control form-control-lg text-danger" placeholder="Movie Name">
+                    </div>
+                </div><!-- col -->
+            </div><!-- row -->
+        </div><!-- container -->
+    </nav>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <script>
+                    for (i = 1; i <= 20; i++) {
+                        document.write(`
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card text-center p-3">
+                        <img src="images/film2.jpg" alt="film">
+                        </br>
+                        <h4>House of the Dragon</h4>
+                        <h5>انتاج 2022</h5>
+                        <h5>التقيم: <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></h5>
+                        <a href="details.html" class="btn bg-danger text-light">تفاصيل الفيلم</a>
+                    </div>
+                </div><!-- col -->
+                                    `)
+                    }
+                </script>
+
+            </div><!-- row -->
+        </div><!-- container -->
+    </section>
+
+    <section class="d-flex justify-content-center">
+        <nav aria-label="...">
+            <ul class="pagination">
+                <li class="page-item">
+                    <span class="page-link bg-danger text-light">السابقة</span>
+                </li>
+                <li class="page-item"><a class="page-link bg-danger text-light" href="#">1</a></li>
+                <li class="page-item active" aria-current="page">
+                    <span class="page-link">2</span>
+                </li>
+                <li class="page-item"><a class="page-link bg-danger text-light" href="#">3</a></li>
+                <li class="page-item"><a class="page-link bg-danger text-light" href="#">4</a></li>
+                <li class="page-item"><a class="page-link bg-danger text-light" href="#">5</a></li>
+                <li class="page-item"><a class="page-link bg-danger text-light" href="#">6</a></li>
+                <li class="page-item">
+                    <a class="page-link bg-danger text-light" href="#">التالية</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <footer class="bg-danger py-4 text-center text-light">
+        <h5>Created by Eng Mohamed Labn &copy; 2022</h5>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

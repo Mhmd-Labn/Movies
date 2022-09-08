@@ -1,0 +1,13 @@
+body{
+    font-family: 'Tajawal'
+}
+i{
+    color: goldenrod;
+}
+li{
+    color: white !important;
+}
+::selection{
+    content: "";
+    color: #DA3544;
+}
